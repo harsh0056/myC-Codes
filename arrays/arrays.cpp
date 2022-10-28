@@ -117,7 +117,7 @@ int equilibriumPoint(long long a[],int n){
 int maxLenOfSubArray(vector<int>&arr, int n)
     {   
 
-        Given an array having both positive and negative integers. The task is to compute the length of the largest subarray with sum 0.
+        // Given an array having both positive and negative integers. The task is to compute the length of the largest subarray with sum 0.
 
         // Your code here
         unordered_map<int,int> mp;
