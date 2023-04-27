@@ -11,6 +11,8 @@ class Node{
     }
 };
 
+
+
 void insert(Node* &head,int x){
     Node* newnode= new Node(x);
     if(head==NULL){
@@ -48,6 +50,7 @@ while(curr){
 return prev;
 
 }
+
 
 Node* reverseListRecursive(Node* head){
     if(head==NULL || head->next ==NULL) return head;
@@ -170,7 +173,40 @@ bool detectLoop(Node* head){
         return false;
 }
 
+class LRUNode{
+     public:
+	int key; 
+	int value; 
+	LRUNode *pre; 
+	LRUNode *next; 
 
+	
+	LRUNode(int k, int v) 
+	{ 
+		key = k; 
+		value = v;
+		pre=NULL;next=NULL;
+	}
+}
+
+class LRUCache{
+    public:
+    unordered_map<int,LRUNode*> mp;
+    int capacity,count;
+    LRUNode* head,tail;
+
+    LRUCache(int c){
+        capacity=c;
+        count=0;
+        
+    }
+
+    void set(int k){
+        if(count==capacity)
+    }
+
+
+}
 
 
 

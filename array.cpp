@@ -183,6 +183,17 @@ void repeatAndMissin(int arr[], int size)
     }
 }
 
+//ceiling on the left side of array 
+void ceilingOnLeft(int arr[],int n){
+    stack<int> st;
+    vector<int> ans;
+    ans.push_back(-1);
+    st.push(arr[0]);
+    for(int i=1;i<n;i++){
+        if(arr[i])
+    }
+}
+
 int main(){
     int arr[6]={2,3,-10,6,-4,8};
     int arrSum=0;
